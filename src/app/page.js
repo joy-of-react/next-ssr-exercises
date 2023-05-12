@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Counter from '../components/Counter';
+
 function Home() {
-  return <p>Hello world!</p>;
+  return <Counter />;
 }
 
 export default Home;

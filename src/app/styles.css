@@ -45,3 +45,14 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* Styles */
+body {
+  display: grid;
+  place-content: center;
+  font-family: sans-serif;
+}
+button {
+  font-size: 2rem;
+  padding: 16px 48px;
+}
