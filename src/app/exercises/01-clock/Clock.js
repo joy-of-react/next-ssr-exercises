@@ -8,7 +8,7 @@ function Clock() {
   React.useEffect(() => {
     const intervalId = window.setInterval(() => {
       setTime(new Date());
-    }, 100);
+    }, 50);
 
     return () => {
       window.clearInterval(intervalId);
