@@ -8,7 +8,7 @@ function Clock() {
   React.useEffect(() => {
     const intervalId = window.setInterval(() => {
       setTime(new Date());
-    }, 1000);
+    }, 100);
 
     return () => {
       window.clearInterval(intervalId);
@@ -16,7 +16,7 @@ function Clock() {
   }, []);
 
   return (
-    <p className="clock">{format(time, 'hh:mm:ss a')}</p>
+    <p className="clock">{format(time, 'hh:mm:ss.S a')}</p>
   );
 }
 
