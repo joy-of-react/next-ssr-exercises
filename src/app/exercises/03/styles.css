@@ -1,0 +1,73 @@
+body {
+  background: black;
+  padding: 16px;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+p {
+  margin-bottom: 1em;
+}
+main {
+  display: flex;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+article {
+  flex: 1;
+  padding: 16px;
+  background: hsl(220deg 20% 94%);
+  border-radius: 24px;
+}
+.hero-img {
+  display: block;
+  border-radius: 8px 8px 2px 2px;
+  margin-bottom: 32px;
+}
+aside {
+  align-self: flex-start;
+  position: sticky;
+  top: 16px;
+  width: 250px;
+  color: white;
+  padding: 16px;
+  border: 1px solid hsl(0deg 0% 30%);
+  border-radius: 24px 24px 8px 8px;
+}
+aside h2 {
+  width: fit-content;
+  margin: 1em auto 0.5em;
+  padding-bottom: 0;
+  border-bottom: 2px dotted hsl(50deg 100% 80%);
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(50deg 100% 80%);
+}
+aside p {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  hyphens: auto;
+}
+aside img {
+  display: block;
+  width: 100%;
+  border-radius: 8px 8px 2px 2px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  border-top: 3px dotted hsl(220deg 30% 80%);
+  padding-top: 32px;
+  margin-top: 32px;
+}
+.row img {
+  flex: 1;
+  min-width: 0px;
+  border-radius: 2px 2px 8px 8px;
+}

@@ -1,0 +1,22 @@
+body {
+  background: hsl(270deg 100% 85%);
+  background-image: url('/cleveland-museum.jpg');
+  background-size: cover;
+  background-position: center right;
+}
+main {
+  position: absolute;
+  right: 0px;
+  top: 16px;
+  background: white;
+  padding: 32px;
+  border-radius: 8px 0px 0px 8px;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-family: monospace;
+  font-size: 1.6rem;
+}

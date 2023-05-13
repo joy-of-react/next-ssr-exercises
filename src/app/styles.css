@@ -46,13 +46,17 @@ h6 {
   isolation: isolate;
 }
 
-/* Styles */
+/* Global styles */
 body {
-  display: grid;
-  place-content: center;
   font-family: sans-serif;
 }
-button {
+
+/* Homepage styles */
+.count-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 12rem;
+  height: 6rem;
   font-size: 2rem;
-  padding: 16px 48px;
 }

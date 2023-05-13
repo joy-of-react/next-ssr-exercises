@@ -1,0 +1,92 @@
+body {
+  padding: 16px;
+}
+h1 {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.items {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  min-width: 170px;
+}
+.items article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 170px;
+  border: 1px solid hsl(0deg 0% 80%);
+  padding: 16px;
+  text-align: center;
+}
+.items article img {
+  margin-bottom: 8px;
+}
+.items article p {
+  margin-top: -4px;
+  margin-bottom: 16px;
+}
+
+.checkout-flow {
+  flex: 1;
+  min-width: 400px;
+  border: 1px solid hsl(0deg 0% 80%);
+  padding: 16px;
+}
+
+.checkout-flow.empty {
+  font-size: 1.5rem;
+  color: hsl(0deg 0% 33%);
+  text-align: center;
+}
+.checkout-flow.empty p {
+  padding: 32px 0px;
+}
+
+.shopping-cart {
+  width: 100%;
+  --image-width: 64px;
+  border-bottom: 3px solid hsl(0deg 0% 25%);
+  margin-bottom: 16px;
+}
+
+.cart-row td {
+  padding: 8px 0px;
+}
+.cart-row td:first-of-type {
+  width: 150px;
+}
+.cart-row td:last-of-type {
+  width: 75px;
+}
+.shopping-cart th {
+  text-align: left;
+}
+
+.product-thumb {
+  width: var(--image-width);
+}
+
+.checkout-totals {
+  width: 100%;
+}
+.checkout-totals th {
+  text-align: right;
+}
+.checkout-totals td {
+  width: 100px;
+}
+.checkout-totals td,
+.checkout-totals th {
+  padding: 8px 16px;
+  background: hsl(0deg 0% 95%);
+}
