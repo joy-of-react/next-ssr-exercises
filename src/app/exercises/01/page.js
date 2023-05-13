@@ -8,7 +8,7 @@ import CheckoutFlow from './CheckoutFlow';
 import './styles.css';
 
 function ExerciseOne() {
-  const [state, dispatch] = React.useReducer(
+  const [items, dispatch] = React.useReducer(
     reducer,
     null,
     () => {
@@ -26,9 +26,9 @@ function ExerciseOne() {
   React.useEffect(() => {
     window.localStorage.setItem(
       'cart-items',
-      JSON.stringify(state)
+      JSON.stringify(items)
     );
-  }, [state]);
+  }, [items]);
 
   return (
     <>
@@ -51,7 +51,7 @@ function ExerciseOne() {
         </div>
 
         <CheckoutFlow
-          items={state}
+          items={items}
           taxRate={0.15}
           handleDeleteItem={(item) =>
             dispatch({

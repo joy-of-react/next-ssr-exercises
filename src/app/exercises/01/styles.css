@@ -44,12 +44,15 @@ main {
 }
 
 .checkout-flow.empty {
-  font-size: 1.5rem;
-  color: hsl(0deg 0% 33%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .checkout-flow.empty p {
   padding: 32px 0px;
+  font-size: 1.5rem;
+  color: hsl(0deg 0% 33%);
+  text-align: center;
 }
 
 .shopping-cart {

@@ -12,7 +12,12 @@ function Spinner({
   return (
     <span
       className={styles.wrapper}
-      style={{ opacity, '--speed': `${speed}ms` }}
+      style={{
+        opacity,
+        '--speed': `${speed}ms`,
+        width: size,
+        height: size,
+      }}
     >
       <Loader color={color} size={size} />
     </span>

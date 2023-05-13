@@ -8,8 +8,6 @@ function reducer(state, action) {
           (item) => item.id === action.item.id
         );
 
-        console.log(action.item, itemIndex);
-
         if (itemIndex !== -1) {
           draftState[itemIndex].quantity += 1;
           return;
