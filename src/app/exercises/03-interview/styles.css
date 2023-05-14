@@ -74,3 +74,13 @@ aside img {
   border-radius: 2px 2px 8px 8px;
   aspect-ratio: 1 / 1;
 }
+
+aside {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  aside {
+    display: revert;
+  }
+}
