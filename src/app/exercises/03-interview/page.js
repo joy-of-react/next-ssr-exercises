@@ -1,16 +1,19 @@
 'use client';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import Interview from './Interview';
 import './styles.css';
 
-const MOBILE_THRESHOLD = 500;
-
 function ExerciseThree() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 500px)',
+  });
+
   return (
     <main>
       <Interview />
-      {window.innerWidth > MOBILE_THRESHOLD && (
+      {isDesktop && (
         <aside>
           <img
             src="/gwen-artist.png"
