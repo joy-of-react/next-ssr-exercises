@@ -7,7 +7,7 @@ import StoreItem from './StoreItem';
 import CheckoutFlow from './CheckoutFlow';
 import './styles.css';
 
-function ExerciseOne() {
+function CheckoutExercise() {
   const [items, dispatch] = React.useReducer(
     reducer,
     null,
@@ -65,4 +65,4 @@ function ExerciseOne() {
   );
 }
 
-export default ExerciseOne;
+export default CheckoutExercise;

@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import Interview from './Interview';
 import './styles.css';
 
-function ExerciseThree() {
+function InterviewExercise() {
   const isDesktop = useMediaQuery({
     query: '(min-width: 500px)',
   });
@@ -34,4 +34,4 @@ function ExerciseThree() {
   );
 }
 
-export default ExerciseThree;
+export default InterviewExercise;

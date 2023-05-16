@@ -3,7 +3,7 @@ import React from 'react';
 import Clock from './Clock';
 import './styles.css';
 
-function ExerciseTwo() {
+function ClockExercise() {
   return (
     <main>
       <h1>Current time:</h1>
@@ -12,4 +12,4 @@ function ExerciseTwo() {
   );
 }
 
-export default ExerciseTwo;
+export default ClockExercise;
