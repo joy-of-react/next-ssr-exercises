@@ -1,5 +1,19 @@
-## Next 13 template
+# Next 13 Server Side Rendering exercises
 
-This is a _super minimal_ starter for Next 13's App Router.
+This repo is meant to be used as part of an exercise in [The Joy of React](https://www.joyofreact.com/).
 
-Not intended for use in production. Purely used for educational reasons.
+## Running a development server
+
+First, install the dependencies:
+
+```bash
+$ npm install
+```
+
+Then, start a local development server:
+
+```bash
+$ npm run dev
+```
+
+**Note:** Unlike create-react-app, we need to run the `dev` command, not `start`. The `start` command is used to run a _production_ server; we'll learn more about that later in the course.
