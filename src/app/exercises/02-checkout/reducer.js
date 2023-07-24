@@ -3,6 +3,10 @@ import produce from 'immer';
 function reducer(state, action) {
   return produce(state, (draftState) => {
     switch (action.type) {
+      case "initialise": {
+        return action.state;
+      }
+
       case 'add-item': {
         const itemIndex = state.findIndex(
           (item) => item.id === action.item.id
