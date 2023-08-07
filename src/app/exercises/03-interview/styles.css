@@ -61,6 +61,16 @@ aside img {
   border-radius: 8px 8px 2px 2px;
 }
 
+aside {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  aside {
+    display: block;
+  }
+}
+
 .row {
   display: flex;
   gap: 16px;
