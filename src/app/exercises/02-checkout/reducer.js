@@ -1,4 +1,4 @@
-import produce from 'immer';
+import { produce } from 'immer';
 
 function reducer(state, action) {
   return produce(state, (draftState) => {
