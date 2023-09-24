@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 
+import Spinner from '../../../components/Spinner';
+
 import CartTable from './CartTable';
 
 function CheckoutFlow({
@@ -8,6 +10,14 @@ function CheckoutFlow({
   taxRate,
   handleDeleteItem,
 }) {
+  if (items === null) {
+    return (
+      <div className="checkout-flow empty">
+        <Spinner />
+      </div>
+    );
+  }
+
   if (items.length === 0) {
     return (
       <div className="checkout-flow empty">
@@ -16,10 +26,13 @@ function CheckoutFlow({
     );
   }
 
-  const priceFormatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-  });
+  const priceFormatter = new Intl.NumberFormat(
+    'en-US',
+    {
+      style: 'currency',
+      currency: 'USD',
+    }
+  );
 
   const subtotal = calculateSubtotal(items);
   const taxes = subtotal * taxRate;
