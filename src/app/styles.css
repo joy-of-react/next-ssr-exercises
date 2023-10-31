@@ -51,16 +51,11 @@ body {
   font-family: sans-serif;
 }
 
-/* Homepage styles */
-.count-btn {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin: auto;
-  width: 12rem;
-  height: 6rem;
-  font-size: 2rem;
+/* Cosmetic homepage styles */
+.homepage-wrapper {
+  padding: 32px;
+}
+
+.homepage-wrapper p {
+  margin-bottom: 1em;
 }

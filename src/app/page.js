@@ -1,9 +1,29 @@
 import React from 'react';
-
-import Counter from '../components/Counter';
+import Link from 'next/link';
 
 function Home() {
-  return <Counter />;
+  return (
+    <div className="homepage-wrapper">
+      <p>
+        This repository consists of three exercises:
+      </p>
+      <ol>
+        <li>
+          <a href="/exercises/01-clock">Clock</a>
+        </li>
+        <li>
+          <a href="/exercises/02-checkout">
+            Neighborhood Shop
+          </a>
+        </li>
+        <li>
+          <a href="/exercises/03-interview">
+            Artist Interview
+          </a>
+        </li>
+      </ol>
+    </div>
+  );
 }
 
 export default Home;
