@@ -1,0 +1,22 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  display: block;
+  animation: spin var(--speed) linear infinite;
+}
+
+.wrapper svg {
+  /*
+    Ensure that the child is block so
+    that it spins symmetrically
+  */
+  display: block;
+}
